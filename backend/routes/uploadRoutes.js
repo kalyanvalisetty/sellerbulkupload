@@ -132,7 +132,7 @@ router.get("/download-template", async (req, res) => {
     res.end();
   } catch (error) {
     console.error("Error generating template:", error);
-    res.status(500).json({ message: "Failed to generate template." });
+    res.status(500).json({ message: "Failed to generate template" });
   }
 });
 
